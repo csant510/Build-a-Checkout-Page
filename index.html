@@ -9,14 +9,23 @@
     <!--heading-->
     <h1>Checkout</h1>
     <!-- main-->
-     <main>
         <section>
             <h2>Your Cart</h2>
             <img alt="rubic cubs" src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg">
         </section>
          <section>
-            <h2></h2>
+            <h2>Payment Information</h2>
+            <form>
+                <label for="card-name">CardHolder Name:
+                    <span aria-hidden="true">*</span>
+                </label>
+                <input type="text" id="card-name" name="card-name" required>
+                 <label for="card-number">Card Number:
+                    <span aria-hidden="true">*</span>
+                 </label>
+                <input type="text" id="card-number" name="card-number" required aria-describedby="card-number-help">
+                <p id="card-number-help">Please enter a valid card number.</p>
+            </form>
          </section>
-     </main>
 </body>
 </html>
